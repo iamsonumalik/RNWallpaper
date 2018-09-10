@@ -31,8 +31,6 @@
 ## Usage
 ```javascript
 import Wallpaper from 'rnwallpaper';
-
-// TODO: What to do with the module?
-Wallpaper;
+Wallpaper.setWallpaper('http://yourwebsite.com/anyImage.png', (res) => Alert.alert("Response: ", JSON.stringify(res)))
 ```
   
