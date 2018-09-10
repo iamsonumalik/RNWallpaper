@@ -3,11 +3,11 @@
 
 ## Getting started
 
-`$ npm install RNWallpaper --save`
+`$ npm install rnwallpaper --save`
 
 ### Mostly automatic installation
 
-`$ react-native link RNWallpaper`
+`$ react-native link rnwallpaper`
 
 ### Manual installation
 
@@ -19,18 +19,18 @@
   - Add `new RNWallpaperPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':RNWallpaper'
-  	project(':RNWallpaper').projectDir = new File(rootProject.projectDir, 	'../node_modules/RNWallpaper/android')
+  	include ':rnwallpaper'
+  	project(':rnwallpaper').projectDir = new File(rootProject.projectDir, 	'../node_modules/rnwallpaper/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':RNWallpaper')
+      compile project(':rnwallpaper')
   	```
 
 
 ## Usage
 ```javascript
-import Wallpaper from 'RNWallpaper';
+import Wallpaper from 'rnwallpaper';
 
 // TODO: What to do with the module?
 Wallpaper;

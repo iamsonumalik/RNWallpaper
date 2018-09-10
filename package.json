@@ -1,5 +1,5 @@
 {
-  "name": "RNWallpaper",
+  "name": "rnwallpaper",
   "version": "1.0.0",
   "description": "A simple module to set Android Wallpaper with a single function.",
   "main": "index.js",
