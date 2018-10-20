@@ -31,6 +31,9 @@
 ## Usage
 ```javascript
 import Wallpaper from 'rnwallpaper';
+
 Wallpaper.setWallpaper('http://yourwebsite.com/anyImage.png', (res) => Alert.alert("Response: ", JSON.stringify(res)))
+
+Wallpaper.openImage('content://media/external/images/media/Y')
 ```
   
