@@ -73,10 +73,9 @@ public class RNWallpaperModule extends ReactContextBaseJavaModule {
                                 @Override
                                 public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
                                     try {
+                                        WallpaperManager.getInstance(reactContext).setBitmap(resource);
                                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                                             WallpaperManager.getInstance(reactContext).setBitmap(resource, null,true,WallpaperManager.FLAG_LOCK);
-                                        }else {
-                                            WallpaperManager.getInstance(reactContext).setBitmap(resource);
                                         }
                                         createResponse("success", "success", url);
                                     } catch (IOException e) {
